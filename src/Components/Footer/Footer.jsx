@@ -5,32 +5,66 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       id="Footer"
-      className="flex justify-around bg-[#465697] text-white p-10 md:p-12 items-center"
+      className="
+        w-full
+        flex
+        flex-col
+        md:flex-row
+        justify-around
+        items-center
+        bg-gradient-to-tr
+        from-[#4b3220]
+        via-[#5c4033]
+        to-[#3f2a1c]
+        text-white
+        p-10
+        md:p-12
+        shadow-inner
+        rounded-none
+      "
     >
-      <div>
-        <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
-        <h3 className="text-sm md:text-2xl font-normal">
-          Feel Free To reach out!
+      <div className="mb-8 md:mb-0 text-center md:text-left">
+        <h1 className="text-3xl md:text-6xl font-extrabold tracking-tight mb-2 drop-shadow-md">
+          Contact
+        </h1>
+        <h3 className="text-sm md:text-2xl font-normal drop-shadow-sm">
+          Feel free to reach out!
         </h3>
       </div>
 
-      <ul className="text-sm md:text-xl">
-        <li className="flex gap-1 items-center">
-          <MdOutlineEmail size={20} />
-          myemail@gmail.com
+      <ul className="text-sm md:text-xl space-y-4 md:space-y-6">
+        <li className="flex gap-3 items-center hover:text-[#C49E68] transition-colors duration-300 cursor-pointer">
+          <MdOutlineEmail size={24} />
+          <a href="mailto:amreshnew77@gmail.com" className="no-underline">
+            amreshnew77@gmail.com
+          </a>
         </li>
-        <li className="flex gap-1 items-center">
-          <CiLinkedin />
-          linkdlin.com/username
+        <li className="flex gap-3 items-center hover:text-[#C49E68] transition-colors duration-300 cursor-pointer">
+          <CiLinkedin size={24} />
+          <a
+            href="https://www.linkedin.com/in/amresh-kumar-5a225b250/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline"
+          >
+            amresh-kumar
+          </a>
         </li>
-        <li className="flex gap-1 items-center">
-          <FaGithub />
-          github.com/username
+        <li className="flex gap-3 items-center hover:text-[#C49E68] transition-colors duration-300 cursor-pointer">
+          <FaGithub size={24} />
+          <a
+            href="https://github.com/amreshgit77"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline"
+          >
+            amreshgit77
+          </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 };
 
